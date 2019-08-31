@@ -150,6 +150,10 @@ img {
 // .masthead
 //
 
+#logo {
+  background-color: aqua;
+}
+
 .wrapper-masthead {
   margin-bottom: 50px;
 }
@@ -229,7 +233,6 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
-    background-color: aqua;
 
     @include mobile {
       margin: 0 10px;
