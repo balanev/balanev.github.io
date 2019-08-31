@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+
+    <header>
+      <div id="head">         
+        <a href="http://www.psy.tsu.ru" id="logo">
+            <img src="/images/logo.png" alt="EF">
+        </a>			
+        <div class="inline-table right-part vertical-top">
+          <div class="upper-part">
+            <div class="name inline-table ">
+              факультет психологии						
+              <div class="slogan"></div>
+            </div>
+            <div class="right vertical-top inline-table float-right">
+              <div class="region region-timeout">
+                <div id="block-count-down-count-down" class="block block-count-down first last odd">
+     
+                  <a class="count_down_event_url" href="/node/561">
+                    <div class="inline-table">
+                      <img src="/images/clock.png" alt="Clock">
+                    </div>
+                    <div class="time-wrapper">
+                      <div class="out_of_time">
+                        <span id="weekNum">РАСПИСАНИЕ</span>
+                      </div>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div> 
+    </header>
+
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
+
+          <nav>
+            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>
