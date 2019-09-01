@@ -17,69 +17,28 @@
 
   <body>
 
-    <header>
-      <div id="head" >         
-        <a href="{{ site.baseurl }}" id="logo" >
-            <img src="{{ site.baseurl }}/images/logo.png" alt="EF">
-        </a>			
-        <div class="inline-table right-part vertical-top">
-          <div class="upper-part">
-            <div class="name inline-table ">
-              факультет психологии						
-              <div class="slogan"></div>
-            </div>
-            <div class="right vertical-top inline-table float-right">
-              <div class="region region-timeout">
-                <div id="block-count-down-count-down" class="block block-count-down first last odd">
-     
-                  <a class="count_down_event_url" href="/node/561">
-                    <div class="inline-table">
-                      <img src="{{ site.baseurl }}/images/clock.png" alt="Clock">
-                    </div>
-                    <div class="time-wrapper">
-                      <div class="out_of_time">
-                        <span id="weekNum">РАСПИСАНИЕ</span>
-                      </div>
-                    </div>
-                  </a>
-
-                </div>
-              </div>
-            </div> 
-          </div>
-        </div>
-      </div> 
+    <header id="header">
+      <a href="{{ site.baseurl }}" id="logo" >
+        <img src="{{ site.baseurl }}/images/logo.png" alt="EF">
+      </a>			
+      <div id="fp">факультет психологии</div>
+      <div id="clock">
+        <img src="{{ site.baseurl }}/images/clock.png" alt="Clock">
+      </div>
+      <div id="rasp">расписание</div>
     </header>
 
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+    <nav id="navigation"></nav>
+   
+    <article id="article"></article>
 
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
+    <footer class="footer">
           {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+    </footer>
 
     {% include analytics.html %}
   </body>

@@ -9,6 +9,17 @@
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
+
+#logo {
+  background-color: aqua;
+}
+
+#header {
+  background-color: blueviolet;
+  width: 1000;
+  height: 150;
+}
+
 /**************/
 /* BASE RULES */
 /**************/
@@ -150,14 +161,6 @@ img {
 // .masthead
 //
 
-#logo {
-  background: greenyellow;
-  background-color: aqua;
-}
-
-#head {
-  background-color: blueviolet;
-}
 
 .wrapper-masthead {
   margin-bottom: 50px;
