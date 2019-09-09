@@ -9,23 +9,55 @@
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
+#header {
+  background-color: rgb(4, 4, 145);
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#tsulogo {
+  height: 150px;
+  object-fit: cover;
+  position: absolute;
+  padding: 10px;
+  z-index: 100;
+}
+
+#clocklogo {
+  object-fit: cover;
+  position: absolute;
+  left: 72%;
+  top: 60px;
+  z-index: 102;
+}
+
+h7 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:36px;
+  color: $white;
+  font-weight: bold;
+  z-index: 200;
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  left: 28%;
+  top: 50px;
+}
 
 #logo {
-  background-color: aqua;
-  -o-transform: scale(0.3);
-	-ms-transform: scale(0.3);
-	-moz-transform: scale(0.3);
-	-webkit-transform: scale(0.3);
-	transform: scale(0.3);
-}
-
-#header {
   background-color: blueviolet;
   background-size: cover;
-  height: 300px;
-  position: relative;
-  background: url(images/XXL_0.jpg) no-repeat
+  height: 475px;
+  width: 1070px;
+  position: absolute;
+  z-index: 2;
+  background: url(images/logo.png) no-repeat rgba(127, 127, 127, 0);
+  transform: scale(.3)
 }
+
 
 /**************/
 /* BASE RULES */
